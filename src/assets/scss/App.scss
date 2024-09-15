@@ -1,0 +1,33 @@
+@import './global.scss';
+@import './dialog.scss';
+
+.main {
+  width: 525px;
+  background-color: #F5F5F5;
+  margin: 100px auto 0;
+  border-radius: 8px;
+  padding: 25px 20px 30px;
+
+  .heading {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .error-message {
+    color: red;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .btn-fetch-todos {
+    height: 42px;
+  }
+
+  .previous-todos {
+    .todos {
+      margin-bottom: 0;
+    }
+  }
+}

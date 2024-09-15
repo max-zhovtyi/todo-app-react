@@ -1,0 +1,22 @@
+.delete-todo-dialog {
+  .text {
+    margin-bottom: 25px;
+  }
+
+  .action-btn-wrapper {
+    display: flex;
+
+    .btn-cancel {
+      margin-right: 15px;
+      background-color: lightgray;
+
+      &:hover {
+        background-color: grey;
+      }
+    }
+
+    .btn-delete {
+      background-color: red;
+    }
+  }
+}

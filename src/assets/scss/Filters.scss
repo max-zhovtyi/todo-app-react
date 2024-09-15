@@ -1,0 +1,61 @@
+.filters-wrapper {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+
+  .filters {
+    display: flex;
+    align-items: center;
+  }
+
+  .filter-item {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 15px;
+    color: #ba5757;
+    height: 30px;
+    border-radius: 4px;
+    margin-right: 5px;
+    border: 2px solid transparent;
+
+    &.active,
+    &:hover {
+      background-color: orangered;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  .sorting-by-date {
+    margin: 0;
+
+    &.asc,
+    &.desc {
+      background-color: orangered;
+      color: white;
+
+      .icon-arrow {
+        visibility: visible;
+      }
+    }
+
+    &.desc {
+      .icon-arrow {
+        transform: rotate(180deg);
+      }
+    }
+
+    &:hover {
+      .icon-arrow {
+        visibility: visible;
+      }
+    }
+
+    .icon-arrow {
+      visibility: hidden;
+      fill: white;
+      margin-right: 5px;
+    }
+  }
+}
